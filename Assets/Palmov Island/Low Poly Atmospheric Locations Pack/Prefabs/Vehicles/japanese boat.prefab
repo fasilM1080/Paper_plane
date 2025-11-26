@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7908526033945544715}
   - component: {fileID: 6516533922481817518}
   - component: {fileID: 9046489591848055652}
-  - component: {fileID: 207776162706557041}
+  - component: {fileID: 7525926804861172820}
   m_Layer: 0
   m_Name: japanese boat
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &207776162706557041
-BoxCollider:
+--- !u!64 &7525926804861172820
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,6 +94,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.839116, y: 4.3345566, z: 9.492075}
-  m_Center: {x: -0.0000012516975, y: 2.1672783, z: 0}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3032026756133384809, guid: 3f2f14930158bbb4eb74cfe861245b6b, type: 3}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1140097549923679709}
   - component: {fileID: 4070597908749185656}
   - component: {fileID: 2276952734737467058}
-  - component: {fileID: 6146977859234805504}
+  - component: {fileID: 1980488079942897742}
   m_Layer: 0
   m_Name: treasure Island
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6146977859234805504
-BoxCollider:
+--- !u!64 &1980488079942897742
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,6 +94,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 34.522705, y: 2.2170792, z: 29.972094}
-  m_Center: {x: 0.0000009536743, y: 1.1085396, z: 0}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4024815224324953287, guid: d42b995400193b14e9f5b1c8f9b002d9, type: 3}

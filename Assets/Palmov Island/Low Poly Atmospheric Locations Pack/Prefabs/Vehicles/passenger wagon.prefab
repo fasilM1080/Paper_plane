@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5165435244668693378}
   - component: {fileID: 3315349832179177155}
   - component: {fileID: 1910962256541171671}
-  - component: {fileID: 731096179676656635}
+  - component: {fileID: 1699954208051106207}
   m_Layer: 0
   m_Name: rear wheels 1
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &731096179676656635
-BoxCollider:
+--- !u!64 &1699954208051106207
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,9 +94,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.4004054, y: 0.935579, z: 0.8897885}
-  m_Center: {x: -0.00012975931, y: 0, z: -0.0000021606684}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8133820605484104673, guid: 75be77989de7d0843bc0c1eadca68e79, type: 3}
 --- !u!1 &390311492104341640
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,7 +109,7 @@ GameObject:
   - component: {fileID: 6192717694781033308}
   - component: {fileID: 6852666704142417882}
   - component: {fileID: 7403815006739763983}
-  - component: {fileID: 409767168977720362}
+  - component: {fileID: 8754082006424903519}
   m_Layer: 0
   m_Name: front wheels 1
   m_TagString: Untagged
@@ -181,8 +182,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &409767168977720362
-BoxCollider:
+--- !u!64 &8754082006424903519
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -191,9 +192,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.4004054, y: 0.935579, z: 0.8897887}
-  m_Center: {x: -0.0000007748604, y: 0, z: 0.0000044107437}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5964569017726565692, guid: 75be77989de7d0843bc0c1eadca68e79, type: 3}
 --- !u!1 &771101221727122783
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +207,7 @@ GameObject:
   - component: {fileID: 4470775087469134410}
   - component: {fileID: 6877896214177763922}
   - component: {fileID: 3558342626202809603}
-  - component: {fileID: 2365616527912792582}
+  - component: {fileID: 7060234583903384629}
   m_Layer: 0
   m_Name: passenger wagon body
   m_TagString: Untagged
@@ -278,8 +280,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2365616527912792582
-BoxCollider:
+--- !u!64 &7060234583903384629
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -288,9 +290,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.59746, y: 4.2805667, z: 12.253391}
-  m_Center: {x: 0, y: 2.1402833, z: -0.000006914139}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8295007780338170752, guid: 75be77989de7d0843bc0c1eadca68e79, type: 3}
 --- !u!1 &1724147407616610358
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +305,7 @@ GameObject:
   - component: {fileID: 1020368058479803918}
   - component: {fileID: 66098840140664397}
   - component: {fileID: 2983516674955859864}
-  - component: {fileID: 6440361081025652379}
+  - component: {fileID: 5587786592755611749}
   m_Layer: 0
   m_Name: front wheels 2
   m_TagString: Untagged
@@ -375,8 +378,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6440361081025652379
-BoxCollider:
+--- !u!64 &5587786592755611749
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -385,9 +388,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.4004054, y: 0.935579, z: 0.8897887}
-  m_Center: {x: -0.0000007748604, y: 0, z: 0.0000044107437}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9128026542335697849, guid: 75be77989de7d0843bc0c1eadca68e79, type: 3}
 --- !u!1 &2444322821583412841
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,7 +440,7 @@ GameObject:
   - component: {fileID: 1422211330453380878}
   - component: {fileID: 7493805584043554673}
   - component: {fileID: 6365299864920867191}
-  - component: {fileID: 1499262487739251479}
+  - component: {fileID: 5184319553999683453}
   m_Layer: 0
   m_Name: rear wheels 2
   m_TagString: Untagged
@@ -509,8 +513,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1499262487739251479
-BoxCollider:
+--- !u!64 &5184319553999683453
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -519,9 +523,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.4004054, y: 0.935579, z: 0.8897885}
-  m_Center: {x: -0.00012975931, y: 0, z: -0.0000016540289}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8586984378464216320, guid: 75be77989de7d0843bc0c1eadca68e79, type: 3}
 --- !u!1 &4375034400933575555
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +538,7 @@ GameObject:
   - component: {fileID: 8496362448812389896}
   - component: {fileID: 8756929388847397447}
   - component: {fileID: 4402711155023334658}
-  - component: {fileID: 9048560814944267765}
+  - component: {fileID: 2745379433377931263}
   m_Layer: 0
   m_Name: connecting device
   m_TagString: Untagged
@@ -606,8 +611,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &9048560814944267765
-BoxCollider:
+--- !u!64 &2745379433377931263
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -616,6 +621,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.24538717, y: 0.24538717, z: 1.675225}
-  m_Center: {x: 0.00000011175871, y: -0.00000014156103, z: 0.8376125}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7050410358146668872, guid: 75be77989de7d0843bc0c1eadca68e79, type: 3}

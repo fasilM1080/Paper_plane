@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8870964322349343721}
   - component: {fileID: 5527082879131380812}
   - component: {fileID: 7732913457696348294}
-  - component: {fileID: 9117749163175016310}
+  - component: {fileID: 6356672231407438788}
   m_Layer: 0
   m_Name: electric pole
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &9117749163175016310
-BoxCollider:
+--- !u!64 &6356672231407438788
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,6 +94,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0664651, y: 7.4227543, z: 0.6472635}
-  m_Center: {x: 0.00000011920929, y: 3.7113771, z: 0.0000011473894}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8823630851541354905, guid: 16a79e554f575344fb424be3ea7a5e3f, type: 3}

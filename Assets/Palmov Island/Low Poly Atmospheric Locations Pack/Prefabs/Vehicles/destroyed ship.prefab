@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8773465633252204316}
   - component: {fileID: 5651532747329982649}
   - component: {fileID: 7605084842216629363}
-  - component: {fileID: 2030472278770311519}
+  - component: {fileID: 5736100541395463622}
   m_Layer: 0
   m_Name: destroyed ship
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2030472278770311519
-BoxCollider:
+--- !u!64 &5736100541395463622
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,6 +94,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 7.183877, y: 12.208406, z: 13.291557}
-  m_Center: {x: 0, y: 6.104203, z: 0}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -327933688243400186, guid: 48f0aa790e68cac4e9b23a2f12085028, type: 3}

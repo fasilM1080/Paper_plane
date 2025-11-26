@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6763679206769964053}
   - component: {fileID: 7670388770054028208}
   - component: {fileID: 5590733758583525242}
-  - component: {fileID: 2440061094728179647}
+  - component: {fileID: 2761579066017017113}
   m_Layer: 0
   m_Name: water tank
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2440061094728179647
-BoxCollider:
+--- !u!64 &2761579066017017113
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,6 +94,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.2218847, y: 8.2223625, z: 5.8827505}
-  m_Center: {x: 0, y: 4.1111813, z: 0}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 878400909070370641, guid: d33d26884c2d6b1439d3673916f2dbf8, type: 3}

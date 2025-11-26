@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 403542746664459020}
   - component: {fileID: 3618202943499654313}
   - component: {fileID: 1572467799442399331}
-  - component: {fileID: 5372256766921875163}
+  - component: {fileID: 9195591250138696711}
   m_Layer: 0
   m_Name: japanes island
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5372256766921875163
-BoxCollider:
+--- !u!64 &9195591250138696711
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,6 +94,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 25.058567, y: 4.6169763, z: 32.35133}
-  m_Center: {x: -0.00000047683716, y: 2.3084881, z: 0}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2817202549553415437, guid: 22d3132618e921b4ebe07f59ea86326e, type: 3}
