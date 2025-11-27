@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class UserDataBehaviour : MonoBehaviour
@@ -35,6 +32,20 @@ public class UserDataBehaviour : MonoBehaviour
 
     public LevelData GetLevelData(int levelID)
     {
-        return levelRoot.levels[levelID];
+        var leveldata = levelRoot.levels[levelID-1];
+        Debug.Log("Level Data of Level : " + leveldata.level_id);
+        return leveldata;
     }
+    public bool IsFirstUser()
+    {
+    if (!PlayerPrefs.HasKey("first"))
+    {
+        PlayerPrefs.SetInt("first", 1);
+        PlayerPrefs.Save();
+        return true;
+    }
+
+    return false;
+    }
+
 }

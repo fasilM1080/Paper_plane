@@ -12,10 +12,9 @@ public class CheckPoint_Controller : MonoBehaviour
     void Start()
     {
         compass = FindAnyObjectByType<Compass>();
-        InitCheckpoint();
     }
 
-    private void InitCheckpoint()
+    public void InitCheckpoint()
     {
         foreach (Transform child in ParentCheckPoint)
         {

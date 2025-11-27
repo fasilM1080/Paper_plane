@@ -25,6 +25,8 @@ public class LevelData
     public float min_completion_time;
     
     public List<Checkpoint> checkpoints;
+
+    public bool isLevelUnlocked;
 }
 
 [Serializable]

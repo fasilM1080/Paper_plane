@@ -1,23 +1,66 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    public static LevelManager Instance;
+
+    [Header("Level Control")]
     [SerializeField] private Transform CheckpointParent;
-    public int currentLevelID = 0;
+
+
+    private LevelData currentLevelData;
+    private CheckPoint_Controller checkPointController;
+
+
+    private void Awake()
+    {
+       if(Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     void Start()
     {
-        LoadLevelData(currentLevelID);
+        checkPointController = FindAnyObjectByType<CheckPoint_Controller>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetCurrentLevelData(int level)
     {
-        
+        currentLevelData = UserDataBehaviour.Instance.GetLevelData(level);
     }
 
-    void LoadLevelData(int levelID)
+    public LevelData GetCurrentLevelData()
+    {
+        return currentLevelData;
+    }
+
+    public bool GetLevelLock(int level)
+    {
+        return UserDataBehaviour.Instance.GetLevelData(level).isLevelUnlocked;
+    }
+
+    public int GetCurrentLevelNumber()
+    {
+        return currentLevelData.level_id;
+    }
+
+    public void UnlockLevel(int level)
+    {
+        var lvl = UserDataBehaviour.Instance.GetLevelData(level);
+        lvl.isLevelUnlocked = true;
+    }
+
+    // public void SaveLevel(int level)
+    // {
+    //     UserDataBehaviour.Instance.SaveLevel(level);
+    // }
+    public void LoadLevelData(int levelID)
     {
         var levelData = UserDataBehaviour.Instance.GetLevelData(levelID);
         int i = 0;
@@ -32,5 +75,7 @@ public class LevelManager : MonoBehaviour
             checkpoint.gameObject.SetActive(levelData.checkpoints[i].enabled);
             i++;
         }
+        checkPointController.InitCheckpoint();
     }
 }
+
