@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,8 +7,11 @@ public class MainPanel : UiPanel
 {
     [Header("Buttons")]
     public Button playButton;
-    // public Button settingsButton;
-    // public Button exitButton;
+    public Button quitButton;
+    public Button muteButton;
+    
+
+    public TextMeshProUGUI MuteTxt;
 
 
     private void OnEnable()
@@ -18,8 +22,8 @@ public class MainPanel : UiPanel
         // }
 
         playButton.onClick.AddListener(OnPlay);
-        // settingsButton.onClick.AddListener(OnSettings);
-        // exitButton.onClick.AddListener(OnExit);
+        quitButton.onClick.AddListener(OnQuit);
+        muteButton.onClick.AddListener(OnMute);
     }
 
     private void Start()
@@ -44,13 +48,21 @@ public class MainPanel : UiPanel
         UiManager.Instance.EnablePanel(PanelType.LevelsMenu);
     }
 
-    private void OnSettings()
+    private void OnMute()
     {
-        // AudioManager.Instance.PlaySfx(AudioType.Enter);
-        // UiManager.Instance.EnablePanel(PanelType.SettingsMenu);
+        //audio manager mute functionality
+
+        if (MuteTxt.text == "Mute")
+        {
+            MuteTxt.text = "Unmute";
+        }
+        else if (MuteTxt.text == "Unmute")
+        {
+            MuteTxt.text = "Mute";
+        }
     }
 
-    private void OnExit()
+    private void OnQuit()
     {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
@@ -62,7 +74,7 @@ public class MainPanel : UiPanel
     private void OnDisable()
     {
         playButton.onClick.RemoveListener(OnPlay);
-        // settingsButton.onClick.RemoveListener(OnSettings);
-        // exitButton.onClick.RemoveListener(OnExit);
+        quitButton.onClick.RemoveListener(OnQuit);
+        muteButton.onClick.RemoveListener(OnMute);
     }
 }
