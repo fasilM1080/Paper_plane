@@ -14,6 +14,7 @@ public class Plane_Controller : MonoBehaviour
     [Header("Rotation Offset")]
     public Vector3 rotationOffset;
 
+    [SerializeField]private Joystick joystick;
     private Vector2 input;
     private float currentYaw;
 
@@ -21,8 +22,8 @@ public class Plane_Controller : MonoBehaviour
     {
         if(!GameManager.Instance.isGameRunning)return;
 
-        input.x = Input.GetAxis("Horizontal");
-        input.y = Input.GetAxis("Vertical");
+        input.x = joystick.Horizontal + Input.GetAxis("Horizontal");;
+        input.y = joystick.Vertical + Input.GetAxis("Vertical");
 
         transform.position += transform.forward * moveSpeed * Time.deltaTime;
 

@@ -3,7 +3,11 @@ using UnityEngine;
 public enum PanelType
 {
     MainMenu = 0,
-    LevelsMenu = 5,
+    LevelsMenu = 1,
+    Hud = 2,
+    PauseMenu = 3,
+    GameOverMenu = 4,
+    GameWonMenu = 5,
 }
 
 public class UiPanel : MonoBehaviour

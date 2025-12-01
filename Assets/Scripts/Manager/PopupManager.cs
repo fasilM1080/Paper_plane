@@ -50,6 +50,8 @@ public class PopupManager : MonoBehaviour
 
         if (activePanel != null)
             activePanel.ShowPanel();
+            Debug.Log("Show Panel: " + type);
+
     }
 
     public void DeactivatePanel(PanelType type)

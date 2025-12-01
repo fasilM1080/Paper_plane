@@ -7,19 +7,22 @@ public enum AudioType
 
 public class UiManager : MonoBehaviour
 {
-    private static UiManager m_Instance;
-    public static UiManager Instance => m_Instance;
-
-    [Header("Canvas")]
-    public GameObject Game_Canvas;
-    public GameObject Ui_Canvas;
+    public static UiManager Instance;
 
     [Header("Popup Manager")]
     public PopupManager popupManager;
 
     private void Awake()
     {
-        m_Instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void EnablePanel(PanelType type)
@@ -40,23 +43,5 @@ public class UiManager : MonoBehaviour
             return panel.GetComponent<T>();
 
         return null;
-    }
-
-    public void EnableGame()
-    {
-        if (Game_Canvas != null)
-            Game_Canvas.SetActive(true);
-
-        if (Ui_Canvas != null)
-            Ui_Canvas.SetActive(false);
-    }
-
-    public void DisableGame()
-    {
-        if (Game_Canvas != null)
-            Game_Canvas.SetActive(false);
-
-        if (Ui_Canvas != null)
-            Ui_Canvas.SetActive(true);
     }
 }
