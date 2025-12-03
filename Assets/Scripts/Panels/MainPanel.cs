@@ -5,10 +5,8 @@ using UnityEngine.UI;
 
 public class MainPanel : UiPanel
 {
-    [Header("Buttons")]
+    [Header("Button")]
     public Button playButton;
-    public Button quitButton;
-    public Button muteButton;
     
 
     public TextMeshProUGUI MuteTxt;
@@ -22,8 +20,6 @@ public class MainPanel : UiPanel
         // }
 
         playButton.onClick.AddListener(OnPlay);
-        quitButton.onClick.AddListener(OnQuit);
-        muteButton.onClick.AddListener(OnMute);
     }
 
     private void Start()
@@ -44,37 +40,12 @@ public class MainPanel : UiPanel
 
     private void OnPlay()
     {
-        // AudioManager.Instance.PlaySfx(AudioType.Start);
+        AudioManager.Instance.PlaySfx(AudioType.ButtonClick);
         UiManager.Instance.EnablePanel(PanelType.LevelsMenu);
-    }
-
-    private void OnMute()
-    {
-        //audio manager mute functionality
-
-        if (MuteTxt.text == "Mute")
-        {
-            MuteTxt.text = "Unmute";
-        }
-        else if (MuteTxt.text == "Unmute")
-        {
-            MuteTxt.text = "Mute";
-        }
-    }
-
-    private void OnQuit()
-    {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
     }
 
     private void OnDisable()
     {
         playButton.onClick.RemoveListener(OnPlay);
-        quitButton.onClick.RemoveListener(OnQuit);
-        muteButton.onClick.RemoveListener(OnMute);
     }
 }

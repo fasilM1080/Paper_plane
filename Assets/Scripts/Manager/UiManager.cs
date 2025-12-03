@@ -1,10 +1,5 @@
 using UnityEngine;
 
-public enum AudioType
-{
-    MainMenu,
-}
-
 public class UiManager : MonoBehaviour
 {
     public static UiManager Instance;

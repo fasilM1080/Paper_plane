@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -36,6 +37,11 @@ public class CheckPoint_Controller : MonoBehaviour
             currentcheckpoint++;
             checkPoints[currentcheckpoint].SetActive(true);
             compass.UpdateTarget(checkPoints[currentcheckpoint].transform);
+        }else
+        {
+            AudioManager.Instance.PlaySfx(AudioType.Winnig);
+            UiManager.Instance.EnablePanel(PanelType.GameWonMenu);
+            GameManager.Instance.isGameRunning = false;
         }
     }
 }

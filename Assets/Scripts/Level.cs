@@ -11,8 +11,6 @@ public class Level : MonoBehaviour
 
     private Animation lockAnim;
 
-    [SerializeField] private GameObject panel;
-
     [Header("Level Data")]
     public int levelNumber = 1;
     private bool isLocked = false;
@@ -38,7 +36,9 @@ public class Level : MonoBehaviour
             // UiManager.Instance.EnablePanel(PanelType.Loading);
             LevelManager.Instance.LoadLevelData(levelNumber);
             GameManager.Instance.isGameRunning = true;
-            panel.SetActive(false);
+            UiManager.Instance.DisablePanel(PanelType.LevelsMenu);
+            AudioManager.Instance.PlayBg(AudioType.GameBg);
+            AudioManager.Instance.PlaySfx(AudioType.ButtonClick);
         }
         else
         {

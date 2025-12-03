@@ -42,7 +42,7 @@ public class LevelSelectorPanel : UiPanel
 
     private void OnNext()
     {
-        // AudioManager.Instance.PlaySfx(AudioType.Enter);
+        AudioManager.Instance.PlaySfx(AudioType.ButtonClick);
         if (animationComponent != null)
             animationComponent.Play();
 
@@ -63,7 +63,7 @@ public class LevelSelectorPanel : UiPanel
 
     private void OnPrev()
     {
-        // AudioManager.Instance.PlaySfx(AudioType.Enter);
+        AudioManager.Instance.PlaySfx(AudioType.ButtonClick);
         if (animationComponent != null)
             animationComponent.Play();
 

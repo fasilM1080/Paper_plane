@@ -6,6 +6,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     [NonSerialized]public bool isGameRunning = false;
+    private GameObject plane;
+    private Vector3 planeStartPos = new Vector3(0, 0, 0);
+    private Quaternion planeStartRot = new Quaternion(0, 0, 0, 0);
 
     void Awake()
     {
@@ -21,10 +24,15 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        
+        plane = GameObject.FindWithTag("Player");
+        planeStartPos = plane.transform.position;
+        planeStartRot = plane.transform.rotation;
     }
-    void Update()
+
+    public void ResetGame()
     {
-        
+        plane.transform.position = planeStartPos;
+        plane.transform.rotation = planeStartRot;
     }
+    
 }
