@@ -7,18 +7,19 @@ public class UserDataBehaviour : MonoBehaviour
     private LevelRoot levelRoot;
     void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        Instance = this;
         // ---Initialzing---
 
         InitLevelData();
+    }
+    void Start()
+    {
+        SaveLevel(1);
+        foreach (var level in levelRoot.levels)
+        {
+            var value = PlayerPrefs.GetInt(level.level_id.ToString(), 0);
+            level.isLevelUnlocked = value == 1 ? true : false;
+        }
     }
 
     private void InitLevelData()
@@ -33,7 +34,6 @@ public class UserDataBehaviour : MonoBehaviour
     public LevelData GetLevelData(int levelID)
     {
         var leveldata = levelRoot.levels[levelID-1];
-        Debug.Log("Level Data of Level : " + leveldata.level_id);
         return leveldata;
     }
     public bool IsFirstUser()
@@ -46,6 +46,10 @@ public class UserDataBehaviour : MonoBehaviour
     }
 
     return false;
+    }
+    public void SaveLevel(int level)
+    {
+        PlayerPrefs.SetInt(levelRoot.levels[level-1].level_id.ToString(),1);
     }
 
 }

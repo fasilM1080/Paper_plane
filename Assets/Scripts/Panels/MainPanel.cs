@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,28 +13,8 @@ public class MainPanel : UiPanel
 
     private void OnEnable()
     {
-        // if (!GameManager.Instance.isGameRestart)
-        // {
-        //     GameManager.Instance.isGameLevelBased = false;
-        // }
 
         playButton.onClick.AddListener(OnPlay);
-    }
-
-    private void Start()
-    {
-        // if (GameManager.Instance.isGameRestart)
-        // {
-        //     AudioManager.Instance.PlaySfx(AudioType.Start);
-        //     GameManager.Instance.isGameRestart = false;
-        //     UiManager.Instance.EnablePanel(PanelType.Loading);
-        // }
-
-        // if (GameManager.Instance.isNextLevel)
-        // {
-        //     GameManager.Instance.isNextLevel = false;
-        //     OnLevels();
-        // }
     }
 
     private void OnPlay()

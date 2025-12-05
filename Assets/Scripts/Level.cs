@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,7 +14,7 @@ public class Level : MonoBehaviour
 
     [Header("Level Data")]
     public int levelNumber = 1;
-    private bool isLocked = false;
+    private bool islocked = false;
 
     private void OnEnable()
     {
@@ -28,29 +29,29 @@ public class Level : MonoBehaviour
 
     private void OnLevelClick()
     {
-        if (!isLocked)
+        if (islocked)
         {
-            // Clicked unlocked level
-            // AudioManager.Instance.PlaySfx(AudioType.Start);
-            // GameManager.Instance.currentSelectedLevel = levelNumber;
-            // UiManager.Instance.EnablePanel(PanelType.Loading);
+            GameManager.Instance.currentlevel = levelNumber;
             LevelManager.Instance.LoadLevelData(levelNumber);
             GameManager.Instance.isGameRunning = true;
             UiManager.Instance.DisablePanel(PanelType.LevelsMenu);
             AudioManager.Instance.PlayBg(AudioType.GameBg);
             AudioManager.Instance.PlaySfx(AudioType.ButtonClick);
         }
-        else
-        {
-            // Clicked locked level animation
-            if (lockAnim != null)
-                lockAnim.Play();
-        }
     }
 
-    public void OnLevelChanged(int level)
+    public void OnLevelChanged(int level, bool islock)
     {
         levelNumber = level;
+        islocked = islock;
+
+        if(!this.islocked){
+            lockIcon.active = true;
+        }
+        else
+        {
+            lockIcon.active = false;
+        }
     }
 
     private void OnDisable()

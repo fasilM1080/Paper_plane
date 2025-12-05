@@ -1,5 +1,7 @@
 
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class LevelManager : MonoBehaviour
 {
@@ -7,6 +9,9 @@ public class LevelManager : MonoBehaviour
 
     [Header("Level Control")]
     [SerializeField] private Transform CheckpointParent;
+    [SerializeField] private Transform Player;
+    [SerializeField] private RewardedAds Ads;
+    [SerializeField] private PlayableDirector timeline;
 
 
     private LevelData currentLevelData;
@@ -15,15 +20,7 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
-       if(Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+       Instance = this;
     }
     void Start()
     {
@@ -52,14 +49,8 @@ public class LevelManager : MonoBehaviour
 
     public void UnlockLevel(int level)
     {
-        var lvl = UserDataBehaviour.Instance.GetLevelData(level);
-        lvl.isLevelUnlocked = true;
+       UserDataBehaviour.Instance.SaveLevel(level);
     }
-
-    // public void SaveLevel(int level)
-    // {
-    //     UserDataBehaviour.Instance.SaveLevel(level);
-    // }
     public void LoadLevelData(int levelID)
     {
         var levelData = UserDataBehaviour.Instance.GetLevelData(levelID);
@@ -75,6 +66,14 @@ public class LevelManager : MonoBehaviour
             checkpoint.gameObject.SetActive(levelData.checkpoints[i].enabled);
             i++;
         }
+        Vector3 playerpos = new Vector3(
+            levelData.SpawnPosition.x,
+            levelData.SpawnPosition.y,
+            levelData.SpawnPosition.z
+            );
+        Player.position = playerpos;
+        Ads.LoadAd();
+        timeline.Play();
         checkPointController.InitCheckpoint();
     }
 }

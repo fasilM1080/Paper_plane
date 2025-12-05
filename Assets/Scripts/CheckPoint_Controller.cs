@@ -42,6 +42,7 @@ public class CheckPoint_Controller : MonoBehaviour
             AudioManager.Instance.PlaySfx(AudioType.Winnig);
             UiManager.Instance.EnablePanel(PanelType.GameWonMenu);
             GameManager.Instance.isGameRunning = false;
+            LevelManager.Instance.UnlockLevel(GameManager.Instance.currentlevel+1);
         }
     }
 }

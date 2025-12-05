@@ -36,7 +36,7 @@ public class LevelSelectorPanel : UiPanel
             int levelNumber = i+1;
 
             levelsLabel[i].text = levelNumber.ToString();
-            levels[i].OnLevelChanged(levelNumber);
+            levels[i].OnLevelChanged(levelNumber,LevelManager.Instance.GetLevelLock(levelNumber));
         }
     }
 
@@ -56,7 +56,7 @@ public class LevelSelectorPanel : UiPanel
 
             levelsLabel[i].text = num.ToString();
             // levels[i].OnLevelChanged(num, LevelManager.Instance.GetLevelLock(num));
-            levels[i].OnLevelChanged(num);
+            levels[i].OnLevelChanged(num,LevelManager.Instance.GetLevelLock(num));
 
         }
     }
@@ -77,14 +77,13 @@ public class LevelSelectorPanel : UiPanel
 
             levelsLabel[i].text = num.ToString();
             // levels[i].OnLevelChanged(num, LevelManager.Instance.GetLevelLock(num));
-            levels[i].OnLevelChanged(num);
-
+            levels[i].OnLevelChanged(num,LevelManager.Instance.GetLevelLock(num));
         }
     }
 
     private void OnBack()
     {
-        // AudioManager.Instance.PlaySfx(AudioType.Exit);
+        AudioManager.Instance.PlaySfx(AudioType.ButtonClick);
         UiManager.Instance.EnablePanel(PanelType.MainMenu);
     }
 

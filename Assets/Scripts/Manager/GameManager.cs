@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -6,33 +7,46 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     [NonSerialized]public bool isGameRunning = false;
-    private GameObject plane;
-    private Vector3 planeStartPos = new Vector3(0, 0, 0);
-    private Quaternion planeStartRot = new Quaternion(0, 0, 0, 0);
+    [NonSerialized]public int currentlevel;
+    [SerializeField] private GameObject plane;
+    [SerializeField] private GameObject planebody;
+    private Collider collider;
+    private MeshRenderer mesh;
 
     void Awake()
     {
-        if(Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+       Instance = this;
     }
     void Start()
     {
-        plane = GameObject.FindWithTag("Player");
-        planeStartPos = plane.transform.position;
-        planeStartRot = plane.transform.rotation;
+        collider = planebody.GetComponent<Collider>();
+        mesh = planebody.GetComponent<MeshRenderer>();
     }
 
-    public void ResetGame()
+    public void ContinueGame()
     {
-        plane.transform.position = planeStartPos;
-        plane.transform.rotation = planeStartRot;
+        collider.enabled = false;
+        StartCoroutine(NonintractiveCollider());
+        StartCoroutine(BlinkRoutine(5f, 0.2f));
+        isGameRunning = true;
     }
-    
+
+    IEnumerator NonintractiveCollider()
+    {
+        yield return new WaitForSeconds(5f);
+        collider.enabled = true;
+    }
+     IEnumerator BlinkRoutine(float duration, float speed)
+    {
+        float timer = 0f;
+
+        while (timer < duration)
+        {
+            mesh.enabled = !mesh.enabled;
+            yield return new WaitForSeconds(speed);
+            timer += speed;
+        }
+
+        mesh.enabled = true; // reset
+    }
 }

@@ -20,6 +20,7 @@ public class Checkpoint
 [Serializable]
 public class LevelData
 {
+    public Position SpawnPosition;
     public int level_id;
 
     public float min_completion_time;
