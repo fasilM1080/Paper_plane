@@ -5,16 +5,16 @@ using UnityEngine.UI;
 public class MainPanel : UiPanel
 {
     [Header("Button")]
-    public Button playButton;
+    [SerializeField] private Button playButton;
+    [SerializeField] private Button infoButton;
     
-
-    public TextMeshProUGUI MuteTxt;
 
 
     private void OnEnable()
     {
 
         playButton.onClick.AddListener(OnPlay);
+        infoButton.onClick.AddListener(OnInfo);
     }
 
     private void OnPlay()
@@ -22,9 +22,15 @@ public class MainPanel : UiPanel
         AudioManager.Instance.PlaySfx(AudioType.ButtonClick);
         UiManager.Instance.EnablePanel(PanelType.LevelsMenu);
     }
+    private void OnInfo()
+    {
+        AudioManager.Instance.PlaySfx(AudioType.ButtonClick);
+        UiManager.Instance.EnablePanel(PanelType.InfoMenu);
+    }
 
     private void OnDisable()
     {
         playButton.onClick.RemoveListener(OnPlay);
+        infoButton.onClick.RemoveListener(OnInfo);
     }
 }

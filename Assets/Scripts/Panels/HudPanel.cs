@@ -11,6 +11,8 @@ public class HudPanel : UiPanel
 
     void OnPause()
     {
+        if (!GameManager.Instance.isGameRunning)return;
+
         AudioManager.Instance.PlaySfx(AudioType.ButtonClick);
         UiManager.Instance.EnablePanel(PanelType.PauseMenu);
         GameManager.Instance.isGameRunning = false;

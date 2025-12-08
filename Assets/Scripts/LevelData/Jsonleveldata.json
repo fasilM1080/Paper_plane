@@ -3,7 +3,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 1,
-      "min_completion_time": 45.0,
+      "min_completion_time": 120,
       "checkpoints": [
         { "id": 0, "position": { "x": -200.0, "y": 12.0, "z": 200.0 }, "enabled": true },
         { "id": 1, "position": { "x": -100.0, "y": 12.0, "z": 100.0 }, "enabled": true },
@@ -20,7 +20,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 2,
-      "min_completion_time": 60.0,
+      "min_completion_time": 118,
       "checkpoints": [
         { "id": 0, "position": { "x": -210.0, "y": 15.0, "z": -225.0 }, "enabled": true },
         { "id": 1, "position": { "x": -150.0, "y": 16.0, "z": -150.0 }, "enabled": true },
@@ -37,7 +37,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 3,
-      "min_completion_time": 90.0,
+      "min_completion_time": 116,
       "checkpoints": [
         { "id": 0, "position": { "x": 205.0, "y": 25.0, "z": 205.0 }, "enabled": true },
         { "id": 1, "position": { "x": 205.0, "y": 22.0, "z": 100.0 }, "enabled": true },
@@ -54,9 +54,9 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 4,
-      "min_completion_time": 110.0,
+      "min_completion_time": 114,
       "checkpoints": [
-        { "id": 0, "position": { "x": -180.0, "y": 12.0, "z": 180.0 }, "enabled": true },
+        { "id": 0, "position": { "x": -180.0, "y": 30.0, "z": 180.0 }, "enabled": true },
         { "id": 1, "position": { "x": 180.0, "y": 12.0, "z": 180.0 }, "enabled": true },
         { "id": 2, "position": { "x": -180.0, "y": 14.0, "z": 90.0 }, "enabled": true },
         { "id": 3, "position": { "x": 180.0, "y": 16.0, "z": 90.0 }, "enabled": false },
@@ -71,10 +71,10 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 5,
-      "min_completion_time": 130.0,
+      "min_completion_time": 112,
       "checkpoints": [
-        { "id": 0, "position": { "x": 0.0, "y": 15.0, "z": 0.0 }, "enabled": true },
-        { "id": 1, "position": { "x": 50.0, "y": 15.0, "z": 50.0 }, "enabled": true },
+        { "id": 0, "position": { "x": 0.0, "y": 30.0, "z": 0.0 }, "enabled": true },
+        { "id": 1, "position": { "x": 50.0, "y": 20.0, "z": 50.0 }, "enabled": true },
         { "id": 2, "position": { "x": 100.0, "y": 15.0, "z": 0.0 }, "enabled": true },
         { "id": 3, "position": { "x": 50.0, "y": 15.0, "z": -50.0 }, "enabled": true },
         { "id": 4, "position": { "x": 0.0, "y": 15.0, "z": -100.0 }, "enabled": false },
@@ -88,7 +88,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 6,
-      "min_completion_time": 145.0,
+      "min_completion_time": 110,
       "checkpoints": [
         { "id": 0, "position": { "x": -212.0, "y": 25.0, "z": -220.0 }, "enabled": true },
         { "id": 1, "position": { "x": -100.0, "y": 22.0, "z": -150.0 }, "enabled": true },
@@ -105,7 +105,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 7,
-      "min_completion_time": 160.0,
+      "min_completion_time": 108,
       "checkpoints": [
         { "id": 0, "position": { "x": 150.0, "y": 12.0, "z": 150.0 }, "enabled": true },
         { "id": 1, "position": { "x": 150.0, "y": 14.0, "z": 50.0 }, "enabled": true },
@@ -122,7 +122,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 8,
-      "min_completion_time": 180.0,
+      "min_completion_time": 107,
       "checkpoints": [
         { "id": 0, "position": { "x": -180.0, "y": 24.0, "z": 180.0 }, "enabled": true },
         { "id": 1, "position": { "x": -160.0, "y": 22.0, "z": 140.0 }, "enabled": true },
@@ -139,7 +139,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 9,
-      "min_completion_time": 200.0,
+      "min_completion_time": 105,
       "checkpoints": [
         { "id": 0, "position": { "x": 200.0, "y": 15.0, "z": 0.0 }, "enabled": true },
         { "id": 1, "position": { "x": 100.0, "y": 12.0, "z": 100.0 }, "enabled": true },
@@ -156,7 +156,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 10,
-      "min_completion_time": 250.0,
+      "min_completion_time": 103,
       "checkpoints": [
         { "id": 0, "position": { "x": -212.0, "y": 25.0, "z": -220.0 }, "enabled": true },
         { "id": 1, "position": { "x": 210.0, "y": 23.0, "z": -220.0 }, "enabled": true },
@@ -173,7 +173,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 11,
-      "min_completion_time": 270.0,
+      "min_completion_time": 101,
       "checkpoints": [
         { "id": 0, "position": { "x": 0.0, "y": 25.0, "z": 0.0 }, "enabled": true },
         { "id": 1, "position": { "x": 50.0, "y": 23.0, "z": 50.0 }, "enabled": true },
@@ -190,7 +190,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 12,
-      "min_completion_time": 285.0,
+      "min_completion_time": 99,
       "checkpoints": [
         { "id": 0, "position": { "x": -212.0, "y": 18.0, "z": -220.0 }, "enabled": true },
         { "id": 1, "position": { "x": -100.0, "y": 14.0, "z": -100.0 }, "enabled": true },
@@ -207,7 +207,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 13,
-      "min_completion_time": 300.0,
+      "min_completion_time": 97,
       "checkpoints": [
         { "id": 0, "position": { "x": -200.0, "y": 20.0, "z": 200.0 }, "enabled": true },
         { "id": 1, "position": { "x": 200.0, "y": 20.0, "z": 200.0 }, "enabled": true },
@@ -224,7 +224,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 14,
-      "min_completion_time": 320.0,
+      "min_completion_time": 95,
       "checkpoints": [
         { "id": 0, "position": { "x": -210.0, "y": 12.0, "z": 0.0 }, "enabled": true },
         { "id": 1, "position": { "x": -150.0, "y": 25.0, "z": 50.0 }, "enabled": true },
@@ -241,7 +241,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 15,
-      "min_completion_time": 360.0,
+      "min_completion_time": 93,
       "checkpoints": [
         { "id": 0, "position": { "x": 0.0, "y": 25.0, "z": 210.0 }, "enabled": true },
         { "id": 1, "position": { "x": 100.0, "y": 22.0, "z": 100.0 }, "enabled": true },
@@ -258,7 +258,7 @@
     {
       "SpawnPosition": { "x": -100.0, "y": 25.0, "z": 0.0 },
       "level_id": 16,
-      "min_completion_time": 200.0,
+      "min_completion_time": 91,
       "checkpoints": [
         { "id": 0, "position": { "x": 250.0, "y": 15.0, "z": 0.0 }, "enabled": true },
         { "id": 1, "position": { "x": 350.0, "y": 15.0, "z": 0.0 }, "enabled": true },
@@ -275,7 +275,7 @@
     {
       "SpawnPosition": { "x": -100.0, "y": 25.0, "z": 0.0 },
       "level_id": 17,
-      "min_completion_time": 220.0,
+      "min_completion_time": 89,
       "checkpoints": [
         { "id": 0, "position": { "x": 260.0, "y": 12.0, "z": -200.0 }, "enabled": true },
         { "id": 1, "position": { "x": 360.0, "y": 14.0, "z": -100.0 }, "enabled": true },
@@ -292,7 +292,7 @@
     {
       "SpawnPosition": { "x": -100.0, "y": 25.0, "z": 0.0 },
       "level_id": 18,
-      "min_completion_time": 240.0,
+      "min_completion_time": 87,
       "checkpoints": [
         { "id": 0, "position": { "x": 300.0, "y": 25.0, "z": 210.0 }, "enabled": true },
         { "id": 1, "position": { "x": 350.0, "y": 20.0, "z": 90.0 }, "enabled": true },
@@ -309,7 +309,7 @@
     {
       "SpawnPosition": { "x": -100.0, "y": 25.0, "z": 0.0 },
       "level_id": 19,
-      "min_completion_time": 260.0,
+      "min_completion_time": 85,
       "checkpoints": [
         { "id": 0, "position": { "x": 250.0, "y": 12.0, "z": -220.0 }, "enabled": true },
         { "id": 1, "position": { "x": 250.0, "y": 25.0, "z": 210.0 }, "enabled": true },
@@ -326,7 +326,7 @@
     {
       "SpawnPosition": { "x": -100.0, "y": 25.0, "z": 0.0 },
       "level_id": 20,
-      "min_completion_time": 280.0,
+      "min_completion_time": 84,
       "checkpoints": [
         { "id": 0, "position": { "x": 300.0, "y": 15.0, "z": 0.0 }, "enabled": true },
         { "id": 1, "position": { "x": 350.0, "y": 25.0, "z": 50.0 }, "enabled": true },
@@ -343,7 +343,7 @@
     {
       "SpawnPosition": { "x": -100.0, "y": 25.0, "z": 0.0 },
       "level_id": 21,
-      "min_completion_time": 300.0,
+      "min_completion_time": 82,
       "checkpoints": [
         { "id": 0, "position": { "x": 240.0, "y": 18.0, "z": -150.0 }, "enabled": true },
         { "id": 1, "position": { "x": 320.0, "y": 18.0, "z": -150.0 }, "enabled": true },
@@ -360,7 +360,7 @@
     {
       "SpawnPosition": { "x": -100.0, "y": 25.0, "z": 0.0 },
       "level_id": 22,
-      "min_completion_time": 315.0,
+      "min_completion_time": 80,
       "checkpoints": [
         { "id": 0, "position": { "x": 500.0, "y": 25.0, "z": 0.0 }, "enabled": true },
         { "id": 1, "position": { "x": 550.0, "y": 22.0, "z": 50.0 }, "enabled": true },
@@ -377,7 +377,7 @@
     {
       "SpawnPosition": { "x": -100.0, "y": 25.0, "z": 0.0 },
       "level_id": 23,
-      "min_completion_time": 330.0,
+      "min_completion_time": 78,
       "checkpoints": [
         { "id": 0, "position": { "x": 250.0, "y": 14.0, "z": 200.0 }, "enabled": true },
         { "id": 1, "position": { "x": 400.0, "y": 18.0, "z": 100.0 }, "enabled": true },
@@ -394,7 +394,7 @@
     {
       "SpawnPosition": { "x": -100.0, "y": 25.0, "z": 0.0 },
       "level_id": 24,
-      "min_completion_time": 345.0,
+      "min_completion_time": 76,
       "checkpoints": [
         { "id": 0, "position": { "x": 400.0, "y": 15.0, "z": 100.0 }, "enabled": true },
         { "id": 1, "position": { "x": 420.0, "y": 15.0, "z": -100.0 }, "enabled": true },
@@ -411,7 +411,7 @@
     {
       "SpawnPosition": { "x": -100.0, "y": 25.0, "z": 0.0 },
       "level_id": 25,
-      "min_completion_time": 360.0,
+      "min_completion_time": 74,
       "checkpoints": [
         { "id": 0, "position": { "x": 240.0, "y": 12.0, "z": -220.0 }, "enabled": true },
         { "id": 1, "position": { "x": 360.0, "y": 14.0, "z": -110.0 }, "enabled": true },
@@ -428,7 +428,7 @@
     {
       "SpawnPosition": { "x": -100.0, "y": 25.0, "z": 0.0 },
       "level_id": 26,
-      "min_completion_time": 375.0,
+      "min_completion_time": 72,
       "checkpoints": [
         { "id": 0, "position": { "x": 300.0, "y": 15.0, "z": 0.0 }, "enabled": true },
         { "id": 1, "position": { "x": 350.0, "y": 18.0, "z": 150.0 }, "enabled": true },
@@ -445,7 +445,7 @@
     {
       "SpawnPosition": { "x": -100.0, "y": 25.0, "z": 0.0 },
       "level_id": 27,
-      "min_completion_time": 390.0,
+      "min_completion_time": 70,
       "checkpoints": [
         { "id": 0, "position": { "x": 700.0, "y": 25.0, "z": 200.0 }, "enabled": true },
         { "id": 1, "position": { "x": 650.0, "y": 23.0, "z": 100.0 }, "enabled": true },
@@ -462,7 +462,7 @@
     {
       "SpawnPosition": { "x": -100.0, "y": 25.0, "z": 0.0 },
       "level_id": 28,
-      "min_completion_time": 410.0,
+      "min_completion_time": 68,
       "checkpoints": [
         { "id": 0, "position": { "x": 250.0, "y": 12.0, "z": 0.0 }, "enabled": true },
         { "id": 1, "position": { "x": 300.0, "y": 15.0, "z": 50.0 }, "enabled": true },
@@ -479,7 +479,7 @@
     {
       "SpawnPosition": { "x": -100.0, "y": 25.0, "z": 0.0 },
       "level_id": 29,
-      "min_completion_time": 430.0,
+      "min_completion_time": 66,
       "checkpoints": [
         { "id": 0, "position": { "x": 725.0, "y": 15.0, "z": 0.0 }, "enabled": true },
         { "id": 1, "position": { "x": 625.0, "y": 15.0, "z": 150.0 }, "enabled": true },
@@ -496,7 +496,7 @@
     {
       "SpawnPosition": { "x": -100.0, "y": 25.0, "z": 0.0 },
       "level_id": 30,
-      "min_completion_time": 450.0,
+      "min_completion_time": 64,
       "checkpoints": [
         { "id": 0, "position": { "x": 240.0, "y": 12.0, "z": -220.0 }, "enabled": true },
         { "id": 1, "position": { "x": 350.0, "y": 15.0, "z": -100.0 }, "enabled": true },
@@ -513,7 +513,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 31,
-      "min_completion_time": 450.0,
+      "min_completion_time": 62,
       "checkpoints": [
         { "id": 0, "position": { "x": -152.0, "y": 20.0, "z": 415.0 }, "enabled": true },
         { "id": 1, "position": { "x": -162.0, "y": 16.0, "z": 442.0 }, "enabled": true },
@@ -530,7 +530,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 32,
-      "min_completion_time": 450.0,
+      "min_completion_time": 60,
       "checkpoints": [
         { "id": 0, "position": { "x": -152.0, "y": 20.0, "z": 415.0 }, "enabled": true },
         { "id": 1, "position": { "x": -210.0, "y": 25.0, "z": 423.86 }, "enabled": true },
@@ -547,7 +547,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 33,
-      "min_completion_time": 150.0,
+      "min_completion_time": 59,
       "checkpoints": [
         { "id": 0, "position": { "x": -475.0, "y": 25.0, "z": -230.0 }, "enabled": true },
         { "id": 1, "position": { "x": -410.0, "y": 15.0, "z": -140.0 }, "enabled": true },
@@ -564,7 +564,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 34,
-      "min_completion_time": 147.0,
+      "min_completion_time": 57,
       "checkpoints": [
         { "id": 0, "position": { "x": -410.0, "y": 25.0, "z": -230.0 }, "enabled": true },
         { "id": 1, "position": { "x": -460.0, "y": 22.0, "z": -150.0 }, "enabled": true },
@@ -581,7 +581,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 35,
-      "min_completion_time": 144.0,
+      "min_completion_time": 55,
       "checkpoints": [
         { "id": 0, "position": { "x": -475.0, "y": 15.0, "z": -230.0 }, "enabled": true },
         { "id": 1, "position": { "x": -410.0, "y": 25.0, "z": -140.0 }, "enabled": true },
@@ -598,7 +598,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 36,
-      "min_completion_time": 141.0,
+      "min_completion_time": 53,
       "checkpoints": [
         { "id": 0, "position": { "x": -410.0, "y": 15.0, "z": -140.0 }, "enabled": true },
         { "id": 1, "position": { "x": -475.0, "y": 25.0, "z": -230.0 }, "enabled": true },
@@ -615,7 +615,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 37,
-      "min_completion_time": 138.0,
+      "min_completion_time": 51,
       "checkpoints": [
         { "id": 0, "position": { "x": -440.0, "y": 12.0, "z": -95.0 }, "enabled": true },
         { "id": 1, "position": { "x": -410.0, "y": 20.0, "z": -230.0 }, "enabled": true },
@@ -632,7 +632,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 38,
-      "min_completion_time": 400.0,
+      "min_completion_time": 49,
       "checkpoints": [
         { "id": 0, "position": { "x": 220.0, "y": 26.0, "z": -400.0 }, "enabled": true },
         { "id": 1, "position": { "x": 225.0, "y": 33.0, "z": -390.0 }, "enabled": true },
@@ -649,7 +649,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 39,
-      "min_completion_time": 410.0,
+      "min_completion_time": 47,
       "checkpoints": [
         { "id": 0, "position": { "x": 248.0, "y": 44.0, "z": -346.0 }, "enabled": true },
         { "id": 1, "position": { "x": 242.0, "y": 42.0, "z": -355.0 }, "enabled": true },
@@ -666,7 +666,7 @@
     {
       "SpawnPosition": { "x": -350.0, "y": 25.0, "z": 0.0 },
       "level_id": 40,
-      "min_completion_time": 420.0,
+      "min_completion_time": 45,
       "checkpoints": [
         { "id": 0, "position": { "x": 218.0, "y": 25.0, "z": -375.0 }, "enabled": true },
         { "id": 1, "position": { "x": 224.0, "y": 29.0, "z": -375.0 }, "enabled": true },

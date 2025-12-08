@@ -8,6 +8,7 @@ public enum PanelType
     PauseMenu = 3,
     GameOverMenu = 4,
     GameWonMenu = 5,
+    InfoMenu = 6
 }
 
 public class UiPanel : MonoBehaviour

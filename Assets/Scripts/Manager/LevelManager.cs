@@ -1,5 +1,4 @@
 
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -9,9 +8,8 @@ public class LevelManager : MonoBehaviour
 
     [Header("Level Control")]
     [SerializeField] private Transform CheckpointParent;
-    [SerializeField] private Transform Player;
-    [SerializeField] private RewardedAds Ads;
-    [SerializeField] private PlayableDirector timeline;
+    [SerializeField] private Transform Player;    [SerializeField] private PlayableDirector timeline;
+    [SerializeField] private Timmer timmer;
 
 
     private LevelData currentLevelData;
@@ -72,9 +70,9 @@ public class LevelManager : MonoBehaviour
             levelData.SpawnPosition.z
             );
         Player.position = playerpos;
-        Ads.LoadAd();
         timeline.Play();
         checkPointController.InitCheckpoint();
+        timmer.StartTimmer(levelData.min_completion_time);
     }
 }
 
